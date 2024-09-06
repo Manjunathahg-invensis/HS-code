@@ -1,0 +1,2 @@
+*.sqlite3 filter=lfs diff=lfs merge=lfs -text
+chroma/9e02172c-1d15-4aa1-a31a-c0aeb78c6a25/data_level0.bin filter=lfs diff=lfs merge=lfs -text
