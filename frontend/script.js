@@ -9,7 +9,7 @@ async function displayOutput() {
         const response = await fetch('http://127.0.0.1:8000/query/', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
+                'Content-Type': 'text/html',
             },
             body: JSON.stringify({ text: inputText }),
         });
