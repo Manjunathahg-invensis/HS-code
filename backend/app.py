@@ -38,7 +38,7 @@ def preprocess_text(text):
     text = " ".join([x.lower() for x in text.split()])
     text = text.replace("<il>", "").replace("</il>", "")
     text = re.sub(r'[;/:<>,()]', ' ', text)
-    text = re.sub(r"\S*https?:\S*", '', text)
+    text = re.sub(r"\S*http?:\S*", '', text)
     text = re.sub("[''“”‘’…]", '', text)
     return text
 
